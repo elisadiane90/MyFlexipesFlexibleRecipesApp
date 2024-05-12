@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Flexipes: Flexible Recipes</string>
+    <string name="title_home">Flexipes Home</string>
+    <string name="title_dashboard">Open Recipe</string>
+    <string name="title_notifications">Saved Recipes</string>
+    <string name="menu_home" />
+    <string name="menu_dashboard" />
+    <string name="menu_notifications" />
+    <string name="search_recipe">Search Recipe</string>
+    <string name="result">Result</string>
+    <string name="fetch">Grab My Recipe!</string>
+    <string name="prep_time">Prep Time: </string>
+    <string name="cook_time">Cook Time: </string>
+    <string name="additional_time">Additional Time: </string>
+    <string name="total_time">Total Time: </string>
+    <string name="servings">Servings: </string>
+    <string name="ingredients">Ingredients:\n</string>
+    <string name="directions">Directions:\n</string>
+    <string name="enter_recipe_url">Paste Recipe URL Here</string>
+    <string name="flexipes_flexible_recipes">Flexipes: Flexible Recipes!</string>
+
+</resources>

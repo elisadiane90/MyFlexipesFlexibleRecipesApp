@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextViews for Prep Time, Cook Time, Additional Time, Total Time, and Servings -->
+        <TextView
+            android:id="@+id/prepTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/prep_time"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/cookTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cook_time"
+            android:textSize="18sp"
+            android:layout_below="@id/prepTimeTextView"
+            android:layout_alignStart="@id/prepTimeTextView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/additionalTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/additional_time"
+            android:textSize="18sp"
+            android:layout_below="@id/cookTimeTextView"
+            android:layout_alignStart="@id/prepTimeTextView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/totalTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_time"
+            android:textSize="18sp"
+            android:layout_below="@id/additionalTimeTextView"
+            android:layout_alignStart="@id/prepTimeTextView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/servingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/servings"
+            android:textSize="18sp"
+            android:layout_below="@id/totalTimeTextView"
+            android:layout_alignStart="@id/prepTimeTextView"
+            android:layout_marginTop="16dp" />
+
+        <!-- TextViews for Ingredients and Directions -->
+        <TextView
+            android:id="@+id/ingredientsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servingsTextView"
+            android:layout_marginTop="16dp"
+            android:text="@string/ingredients"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@id/prepTimeTextView" />
+
+        <TextView
+            android:id="@+id/directionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingredientsTextView"
+            android:layout_marginTop="8dp"
+            android:text="@string/directions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@id/prepTimeTextView" />
+
+        <!-- Bottom Navigation View -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu" />
+
+
+    </RelativeLayout>
+</ScrollView>
